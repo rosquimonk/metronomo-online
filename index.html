@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metrónomo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Metrónomo</h1>
+        <div class="controls">
+            <label for="tempo">Tempo: <span id="tempo-value">120</span> BPM</label>
+            <input type="range" id="tempo" min="40" max="240" value="120">
+        </div>
+        <div class="volume-control">
+            <label for="volume">Volumen:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+        <button id="start-stop">Iniciar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
